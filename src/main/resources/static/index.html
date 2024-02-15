@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Bestilling av kinobiletter</h1>
-<form id="form">
+<form id="skjema">
     Velg film: <select id="velgFilm">
     <option value="">Velg film her</option>
     <option value="Film-1">The Shawshank Redemption</option>
@@ -22,7 +22,7 @@
     Telefonnr : <input id="telefonnr" type="tel" pattern="[0-9]{8}" ><span id="feilMeldingTelefonnr" style="color: red"></span><br>
     Email : <input id="email" type="text" ><span id="feilMeldingEmail" style="color: red"></span><br><br>
 </form>
-<button onclick="validering()" value="">Kjop bilett</button>
+<button onclick="validering()" value="">Kjop billett</button>
 <br><br>
 <h3>Alle Billetter</h3>
 <table>
@@ -34,7 +34,7 @@
     <th>Telefonnr</th>
     <th>Email</th>
     </thead>
-    <tbody id="table">
+    <tbody id="tabell">
 
     </tbody>
 </table>

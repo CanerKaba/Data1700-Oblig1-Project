@@ -35,8 +35,8 @@ function validering() {
         return;
     }
 
-    filmInfo=[];
-    filmInfo.push(
+    Billett=[];
+    Billett.push(
         {
             film: film,
             antall: antall,
@@ -46,9 +46,9 @@ function validering() {
             email: email
         }
     );
-    console.log(filmInfo)
+    console.log(Billett)
     ut+="<tr>";
-    for (f of filmInfo){
+    for (f of Billett){
         ut+="<th>"+f.film+"</th>"+
             "<th>"+f.antall+"</th>"+
             "<th>"+f.fornavn+"</th>"+
@@ -57,10 +57,10 @@ function validering() {
             "<th>"+f.email+"</th>";
     }
     ut+="</tr>";
-    document.getElementById("table").innerHTML=ut;
-    document.getElementById("form").reset();
+    document.getElementById("tabell").innerHTML=ut;
+    document.getElementById("skjema").reset();
 }
 function slett(){
     ut="";
-    document.getElementById("table").innerHTML=ut;
+    document.getElementById("tabell").innerHTML=ut;
 }
