@@ -3,17 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="js.js"></script>
 </head>
 <body>
 <h1>Bestilling av kinobiletter</h1>
-Velg film: <select name="" id="velg film">
+<form id="form">
+    Velg film: <select id="velgFilm">
     <option value="">Velg film her</option>
-    <option value="Film-1">Film-1</option>
-    <option value="Film-2">Film-2</option>
-    <option value="Film-3">Film-3</option>
-    <option value="Film-4">Film-4</option>
-    <option value="Film-5">Film-5</option>
+    <option value="Film-1">The Shawshank Redemption</option>
+    <option value="Film-2">The Godfather</option>
+    <option value="Film-3">The Dark Knight</option>
+    <option value="Film-4">12 Angry Men</option>
+    <option value="Film-5">Schindler`s List</option>
 </select><br><br>
-Antall: <input type="number" min="1" style="width: 30px">
+    Antall : <input id="antall" type="number" min="1" style="width: 30px" ><span id="feilMeldingAntall" style="color: red"></span><br><br>
+    Fornavn : <input id="fornavn" type="text" ><span id="feilMeldingFornavn" style="color: red"></span><br>
+    Etternavn : <input id="etternavn" type="text" ><span id="feilMeldingEtternavn" style="color: red"></span><br>
+    Telefonnr : <input id="telefonnr" type="tel" pattern="[0-9]{8}" ><span id="feilMeldingTelefonnr" style="color: red"></span><br>
+    Email : <input id="email" type="text" ><span id="feilMeldingEmail" style="color: red"></span><br><br>
+</form>
+<button onclick="validering()" value="">Kjop bilett</button>
+<br><br>
+<h3>Alle Billetter</h3>
+<table>
+    <thead>
+    <th>Film</th>
+    <th>Antall</th>
+    <th>Fornavn</th>
+    <th>Etternavn</th>
+    <th>Telefonnr</th>
+    <th>Email</th>
+    </thead>
+    <tbody id="table">
+
+    </tbody>
+</table>
+<button onclick="slett()">Slett alle billettene</button>
 </body>
 </html>
