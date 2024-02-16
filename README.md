@@ -3,7 +3,7 @@ Oslomet brukernavn : cakab8571
 
 GitHub brukernavn : CanerKaba
 
-Github repo URL :https://github.com/CanerKaba/Data1700-Oblig-1
+Github repo URL :https://github.com/CanerKaba/Data1700-Oblig1-Project.git
 
 Fullt navn : Caner Kabacaoglu
 
