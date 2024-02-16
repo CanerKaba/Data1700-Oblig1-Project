@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Bestilling av kinobiletter</h1>
-<form id="skjema">
+<table id="skjema">
     Velg film: <select id="velgFilm">
     <option value="">Velg film her</option>
     <option value="Film-1">The Shawshank Redemption</option>
@@ -16,15 +16,50 @@
     <option value="Film-4">12 Angry Men</option>
     <option value="Film-5">Schindler`s List</option>
 </select><br><br>
-    Antall : <input id="antall" type="number" min="1" style="width: 30px" ><span id="feilMeldingAntall" style="color: red"></span><br><br>
-    Fornavn : <input id="fornavn" type="text" ><span id="feilMeldingFornavn" style="color: red"></span><br>
-    Etternavn : <input id="etternavn" type="text" ><span id="feilMeldingEtternavn" style="color: red"></span><br>
-    Telefonnr : <input id="telefonnr" type="tel" pattern="[0-9]{8}" ><span id="feilMeldingTelefonnr" style="color: red"></span><br>
-    Email : <input id="email" type="text" ><span id="feilMeldingEmail" style="color: red"></span><br><br>
-</form>
+    Antall : <input id="antall" type="number" min="1" style="width: 30px"><span id="boks1" style="color: red"></span><br><br>
+    <tr>
+        <td>
+            <label for="fornavn">Fornavn :</label>
+        </td>
+        <td>
+            <input id="fornavn" type="text" value="" required>
+        </td>
+        <td id="boks2" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="etternavn">Etternavn :</label>
+        </td>
+        <td>
+            <input id="etternavn" type="text" value="" required>
+
+        </td>
+        <td id="boks3" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="telefonnr">Telefonnr :</label>
+        </td>
+        <td>
+            <input id="telefonnr" type="tel" value="" required>
+
+        </td>
+        <td id="boks4" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="email">Email :</label>
+        </td>
+        <td>
+            <input id="email" type="email" value="" required>
+
+        </td>
+        <td id="boks5" style="color: red"></td>
+    </tr>
+</table>
 <button onclick="validering()" value="">Kjop billett</button>
 <br><br>
-<h3>Alle Billetter</h3>
+<h2>Alle Billetter</h2>
 <table>
     <thead>
     <th>Film</th>

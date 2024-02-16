@@ -8,11 +8,11 @@ function validering() {
     let email=document.getElementById("email").value;
     console.log(film,antall,fornavn,etternavn,telefonnr,email)
     if(antall===""|| fornavn===""|| etternavn===""|| telefonnr===""|| email===""){
-        document.getElementById("feilMeldingAntall").innerText=" Må skrive noe inn i antall";
-        document.getElementById("feilMeldingFornavn").innerText=" Må skrive noe inn i fornavn";
-        document.getElementById("feilMeldingEtternavn").innerText=" Må skrive noe inn i etternavn";
-        document.getElementById("feilMeldingTelefonnr").innerText=" Må skrive noe inn i telefonnr";
-        document.getElementById("feilMeldingEmail").innerText=" Må skrive noe inn i email";
+        document.getElementById("boks1").innerText=" Må skrive noe inn i antall";
+        document.getElementById("boks2").innerText=" Må skrive noe inn i fornavn";
+        document.getElementById("boks3").innerText=" Må skrive noe inn i etternavn";
+        document.getElementById("boks4").innerText=" Må skrive noe inn i telefonnr";
+        document.getElementById("boks5").innerText=" Må skrive noe inn i email";
     }
     const fornavnRegex=/^[a-zA-Z\s]+$/;
     if(!fornavnRegex.test(fornavn)){
