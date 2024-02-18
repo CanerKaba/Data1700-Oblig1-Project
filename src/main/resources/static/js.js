@@ -16,22 +16,22 @@ function validering() {
     }
     const fornavnRegex=/^[a-zA-Z\s]+$/;
     if(!fornavnRegex.test(fornavn)){
-        alert("Skriv inn et gyldig fornavn.");
+        document.getElementById("feilNavn").innerText="Skriv inn et gyldig fornavn.";
         return;
     }
     const etternavnRegex=/^[a-zA-Z\s]+$/;
     if(!etternavnRegex.test(etternavn)){
-        alert("Skriv inn et gyldig etternavn.");
+        document.getElementById("feilEtternavn").innerText="Skriv inn et gyldig etternavn.";
         return;
     }
     const tlfRegex=/^[0-9]{1,8}$/;
     if(!tlfRegex.test(telefonnr)){
-        alert(" Skriv inn et gyldig telefonnr.");
+        document.getElementById("feilTelefonnr").innerText="Skriv inn et gyldig telefonnummer.";
         return;
     }
     const emailRegex=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if(!emailRegex.test(email)){
-        alert("Skriv inn en gyldig epost adresse");
+        document.getElementById("feilEmail").innerText="Skriv inn en gyldig epost adresse";
         return;
     }
 
